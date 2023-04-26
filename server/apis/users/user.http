@@ -1,0 +1,31 @@
+//Get all users from the database
+GET http://localhost:5000/api/user/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDQ0ZWQ4N2ZlYjQ3ODNjY2RiZjg2NmQiLCJ1c2VyUm9sZSI6ImFkbWluIiwiaWF0IjoxNjgyMzI5NjAyfQ.uJ7qVryuOMKXAYNNm6f9fj9xsiC7JOpX-wn4UFrKv0A
+
+###
+
+//Get user's information from the database by id
+GET http://localhost:5000/api/user/detail/6444ed87feb4783ccdbf866d
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDQ0ZWQ4N2ZlYjQ3ODNjY2RiZjg2NmQiLCJ1c2VyUm9sZSI6ImFkbWluIiwiaWF0IjoxNjgyMzI4MjkxfQ.EojC18I-V0OQw5g_JXWgyWTDpoEd-UFUy2S4JSBL-0M
+
+//Update user's information from the database by id
+###
+PUT http://localhost:5000/api/user/update/6444ed87feb4783ccdbf866d
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDQ0ZTVmZWQ5YWIxYzA3NzliN2ZhZmEiLCJ1c2VyUm9sZSI6ImFkbWluIiwiaWF0IjoxNjgyMjM4OTI5fQ.lYXWu7PSjBea8mL3DO6mGmJcngP4WYGEwwRmLZNd0QE
+
+{
+    "username" : "user7",
+    "password" : "user7new",
+    "email" : "user7new@gmail.com",
+    "role": "admin"
+}
+
+
+//Delete user's information from the database by id
+###
+DELETE  http://localhost:5000/api/user/delete/6444c3278fccb40275b68a7d
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDQ0ZWQ4N2ZlYjQ3ODNjY2RiZjg2NmQiLCJ1c2VyUm9sZSI6ImFkbWluIiwiaWF0IjoxNjgyMjQwNTMzfQ.AKw1xW9ZcSyOwsU6aWKLeV5lQbNzIz_V7TTX_2MbSAs

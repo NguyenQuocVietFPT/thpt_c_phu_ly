@@ -1,0 +1,19 @@
+//Register new user
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username" : "user8",
+    "password" : "user8",
+    "email" : "user8@gmail.com"   
+}
+
+###
+//Login user
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username" : "user8",
+    "password" : "user8"
+}

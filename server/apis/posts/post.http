@@ -1,0 +1,35 @@
+
+GET http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDQ0ZWQ4N2ZlYjQ3ODNjY2RiZjg2NmQiLCJ1c2VyUm9sZSI6ImFkbWluIiwiaWF0IjoxNjgyNDIzODIwfQ.tEoWmXTce8B9mQRRdadcf5ma9z0fiZYDfM16keuV8UI
+
+
+###
+POST  http://localhost:5000/api/posts/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDQ0ZWQ4N2ZlYjQ3ODNjY2RiZjg2NmQiLCJ1c2VyUm9sZSI6ImFkbWluIiwiaWF0IjoxNjgyNDIzODIwfQ.tEoWmXTce8B9mQRRdadcf5ma9z0fiZYDfM16keuV8UI
+
+{
+    "tittle":"New post 3",
+    "description":"New post 3 description"
+}
+
+###
+GET http://localhost:5000/api/posts/new-post-2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDQ0ZWQ4N2ZlYjQ3ODNjY2RiZjg2NmQiLCJ1c2VyUm9sZSI6ImFkbWluIiwiaWF0IjoxNjgyNDIzODIwfQ.tEoWmXTce8B9mQRRdadcf5ma9z0fiZYDfM16keuV8UI
+
+###
+PUT http://localhost:5000/api/posts/update/new-post-2-gH282Jmjs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDQ0ZWQ4N2ZlYjQ3ODNjY2RiZjg2NmQiLCJ1c2VyUm9sZSI6ImFkbWluIiwiaWF0IjoxNjgyNDIzODIwfQ.tEoWmXTce8B9mQRRdadcf5ma9z0fiZYDfM16keuV8UI
+
+{
+    "tittle": "New post 4",
+    "description": "New post 4 Update Description"
+}
+
+###
+DELETE http://localhost:5000/api/posts/delete/new-post-3-ELsFhBROA
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDQ0ZWQ4N2ZlYjQ3ODNjY2RiZjg2NmQiLCJ1c2VyUm9sZSI6ImFkbWluIiwiaWF0IjoxNjgyNDIzODIwfQ.tEoWmXTce8B9mQRRdadcf5ma9z0fiZYDfM16keuV8UI
